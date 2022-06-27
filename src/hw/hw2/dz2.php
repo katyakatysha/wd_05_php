@@ -4,51 +4,47 @@ $arr = [-10, -9, 9, 5, -5, 4, -5, 9, 1, 0, -10, 11, [789, 98, 0], 22, 8];
 
 //1. Найти все положительные элементы массива
 
-//    for ($a =0; $a<count($arr);$a++){
-//    if (($arr[$a] >0) && (gettype($arr[$a])=="integer")){
-//        echo "$arr[$a] ";
-//    }
-//}
+for ($a = 0; $a < count($arr); $a++) {
+    if (($arr[$a] > 0) && (gettype($arr[$a]) == "integer")) {
+        echo "$arr[$a] ";
+    }
+}
+echo "<br>";
 
 //2 найти элементы массива, которые больше среднеарифметического значения и вывести их ИНДЕКСЫ
 
-//for ($b =0; $b<count($arr);$b++){
-//
-//    if (($arr[$b] >(array_sum($arr)/count($arr))) && (gettype($arr[$b])=="integer")){
-//        echo "$b ";
-//    }
-//}
+for ($b = 0; $b < count($arr); $b++) {
+
+    if (($arr[$b] > (array_sum($arr) / count($arr))) && (gettype($arr[$b]) == "integer")) {
+        echo "$b ";
+    }
+}
+echo "<br>";
 
 //3. Вывести элементы массива, которые больше предыдущего
 
-//for ($b =1; $b<count($arr);$b++) {
-//
-//    if (($arr[$b] > $arr[$b - 1]) && (gettype($arr[$b]) == "integer")) {
-//        echo "$arr[$b] ";
-//    }
-//}
+for ($b = 1; $b < count($arr); $b++) {
+
+    if (($arr[$b] > $arr[$b - 1]) && (gettype($arr[$b]) == "integer")) {
+        echo "$arr[$b] ";
+    }
+}
+echo "<br>";
 
 //4. Определить , есть ли в массиве  повторяющиеся элементы
 
-//for ($b =1; $b<count($arr);$b++) {
-//
-//    if (($arr[$b] > $arr[$b - 1]) && (gettype($arr[$b]) == "integer")) {
-//        echo "$arr[$b] ";
-//    }
-//}
-
 //5. Удалить в массиве элементы, которые встречаются более двух раз
-
 
 //6. Определите, является ли массив двумерным
 for ($a = 0; $a < count($arr); $a++) {
     if (gettype($arr[$a]) !== "integer") {
         echo "Массив является двухмерным <br>";
         break;
-    } elseif($arr[$a]=count($arr)) {
+    } elseif ($arr[$a] = count($arr)) {
         echo "Массив не является двухмерным <br>";
     }
 }
+echo "<br>";
 //7. Вывести таблицу умножения
 
 
